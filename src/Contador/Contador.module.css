@@ -1,0 +1,21 @@
+.TodoCounter {
+    font-size: 30px;
+    text-align: center;
+    margin-left: -35px;
+    margin-top: 120px;
+    padding: 30px;
+    font-weight: 500;
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "GRAD" 0;
+}
+
+
+.TodoCounter span {
+    margin: 10px;
+    padding: 10px;
+    font-weight: 700
+}

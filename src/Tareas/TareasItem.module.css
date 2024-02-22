@@ -1,0 +1,67 @@
+.Boxli {
+    width: 300px;
+    height: 150px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 18px 18px 36px #bababa,
+        -18px -18px 36px #ffffff;
+    margin-top: 30px;
+
+}
+
+.Boxli p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 25px;
+    padding-top: 55px;
+
+}
+
+.Boxli p {
+    font-weight: 400;
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "GRAD" 0;
+}
+
+
+
+.contenedordesvg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    margin-top: 10px;
+}
+
+.contenedordesvg span {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+.tilde svg {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.tilde svg:hover {
+    color: #12E000;
+}
+
+
+.x svg {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.x:hover {
+    color: red;
+
+}

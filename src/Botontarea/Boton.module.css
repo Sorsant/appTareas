@@ -1,0 +1,41 @@
+.addButtonConteiner {
+    width: 300px;
+    margin-left: 35px;
+    text-align: center;
+    background-color: #7997f3;
+    border-radius: 10px;
+    padding: 5px;
+    padding-top: 10px;
+    margin-top: 35px;
+}
+
+.addButtonConteiner:hover {
+    background-color: #51E110;
+}
+
+.add {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+    transform: rotate(0);
+    transition: .4s ease;
+}
+
+.addButtonConteiner:hover .add {
+    transform: rotate(360deg);
+}
+
+.spanAdd {
+    font-weight: 400;
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "GRAD" 0;
+}
