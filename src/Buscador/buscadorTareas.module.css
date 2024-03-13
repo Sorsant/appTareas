@@ -1,8 +1,9 @@
 .search {
-    width: 300px;
+    width: 290px;
     height: 30px;
     margin-left: 35px;
     padding: 5px;
+    border: 1px solid #40404042;
     font-weight: 400;
     font-family: "Roboto Serif", serif;
     font-optical-sizing: auto;

@@ -27,7 +27,9 @@
         "GRAD" 0;
 }
 
-
+.parrafo_Active {
+    text-decoration: line-through solid;
+}
 
 .contenedordesvg {
     display: flex;
@@ -42,7 +44,21 @@
     margin-right: 20px;
 }
 
+.icon_active {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
+    border-radius: 50px;
+    background-color: #12E000;
+    border: 1px solid #ccc
+}
 
+.icon_active:hover {
+    background-color: #0d5206;
+    border: 1px solid #ccc
+}
 
 .tilde svg {
     margin-top: 10px;

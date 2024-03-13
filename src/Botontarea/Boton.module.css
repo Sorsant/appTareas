@@ -1,19 +1,25 @@
-.addButtonConteiner {
+.add {
     width: 300px;
+    height: 45px;
     margin-left: 35px;
     text-align: center;
     background-color: #7997f3;
     border-radius: 10px;
+    border: none;
     padding: 5px;
-    padding-top: 10px;
     margin-top: 35px;
+    cursor: pointer;
+
 }
 
-.addButtonConteiner:hover {
-    background-color: #51E110;
+.add svg {
+    height: 35px;
+    color: #ffffff;
+    transform: rotate(0);
+    transition: .5s ease;
 }
 
-.add {
+.svg_add {
     background: none;
     border: none;
     cursor: pointer;
@@ -22,11 +28,9 @@
     width: 30px;
     height: 30px;
     color: #ffffff;
-    transform: rotate(0);
-    transition: .4s ease;
 }
 
-.addButtonConteiner:hover .add {
+.add:hover svg {
     transform: rotate(360deg);
 }
 
