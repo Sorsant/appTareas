@@ -49,7 +49,7 @@
     height: 4px;
     border-radius: 2px;
     background: inherit;
-    position: absolute;
+    position: relative;
     top: -10px;
     left: 6px;
 }

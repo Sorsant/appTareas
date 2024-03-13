@@ -9,7 +9,8 @@ import TareasError from './TareasError/tareasError.jsx';
 import Empty from './Empty /empty.jsx';
 import React from 'react';
 import Modal from './Modal/Modal.jsx';
-import './App.css';
+import TareasForm from './TareasForm/TareasForm.jsx';
+import style from './App.css';
 
 
 function App() {
@@ -17,7 +18,11 @@ function App() {
   const [searchValue, setSearchValue] = React.useState("");
   const [openModal, setOpenModal] = React.useState(false);
 
-
+  const addTarea = (text) => {
+    const newTareas = [...tareas];
+    newTareas.push({ text, completadas: false });
+    saveTareas(newTareas);
+  }
   const completadasTareas = tareas.filter(tareas => !!tareas.completadas).length
 
   const totalTareas = tareas.length
@@ -44,13 +49,19 @@ function App() {
 
 
   return (
-    <div>
-      <ContadorTareas completadas={completadasTareas} total={totalTareas} />
-      <BuscadorTareas searchValue={searchValue} setSearchValue={setSearchValue} />
-      <CreateTareaBoton />
-      {openModal && (<Modal>
+    <div className='column'>
+      <div className='fixed'>
+        <ContadorTareas completadas={completadasTareas} total={totalTareas} />
+        <BuscadorTareas searchValue={searchValue} setSearchValue={setSearchValue} />
+        <CreateTareaBoton setOpenModal={setOpenModal} />
+        {openModal && (<Modal>
+          <TareasForm setOpenModal={setOpenModal}
+            addTarea={addTarea}
+          />
+        </Modal>)}
 
-      </Modal>)}
+      </div>
+
       <Tareaslista>
         {loading && <TareasLoading />}
         {error && <TareasError />}
@@ -66,6 +77,7 @@ function App() {
           />
         ))}
       </Tareaslista>
+
 
     </div>
   );

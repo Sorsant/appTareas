@@ -1,3 +1,19 @@
 li {
     list-style: none
 }
+
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .fixed {
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    width: 400px;
+    height: 250px;
+    margin: 0;
+} */
